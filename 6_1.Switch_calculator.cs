@@ -4,34 +4,37 @@ public class Program
  {
     public static void Main(string[] args)
     {
-    int a, b;
- char c;
+    int numberFirst, numberSecond;
+ char action;
   
  Console.WriteLine("Privet! Eto prostoy kalkulyator. On ummet +, -, *, /");
   
  Console.WriteLine("Vvedite chislo A"); 
- a = Convert.ToInt32(Console.ReadLine()); 
+ numberFirst = Convert.ToInt32(Console.ReadLine()); 
   Console.WriteLine("nujnoe deystvie");
- c = Convert.ToChar(Console.ReadLine());
+ action = Convert.ToChar(Console.ReadLine());
  Console.WriteLine("Chislo B");
-  b = Convert.ToInt32(Console.ReadLine());
+  numberSecond = Convert.ToInt32(Console.ReadLine());
  
   
   
-  switch (c)
+  switch (action)
   {
   case '*':
-   Console.WriteLine(a * b);
+   Console.WriteLine(numberFirst * numberSecond);
   break;
   case '/':
-   Console.WriteLine(a / b);
+   Console.WriteLine(numberFirst / numberSecond);
   break;
    case '+':
-   Console.WriteLine(a + b);
+   Console.WriteLine(numberFirst + numberSecond);
   break;
   case '-':
-   Console.WriteLine(a - b);
+   Console.WriteLine(numberFirst - numberSecond);
   break;
+	default : 
+		  Console.WriteLine("Vy vveli nekorrektnyj simvol");
+		  break;
   }
  }
 }
