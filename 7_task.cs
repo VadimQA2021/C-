@@ -6,7 +6,14 @@ public class Program
     {
 		//В зависимости от номера дня недели вывести его название. Названия месяцев хранить в константах
 	int dayNumber;
-
+const string dayMonday = "Monday";
+	const string dayTuesday = "Tuesday";
+	const string dayWednesday = "Wednesday";
+	const string dayThursday = "Thursday";
+	const string dayFriday = "Friday";
+	const string daySaturday = "Saturday";
+	const string daySunday = "Sunday";
+	
   
  Console.WriteLine("Enter the number of the day of the week to display its name");
   
