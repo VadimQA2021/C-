@@ -23,9 +23,7 @@ public class Program
 			sumNeChetnoeChislo++;
 			}
 		}
-		Console.WriteLine(chetnoeChislo);
-		Console.WriteLine(sumChetnoeChislo);
-		Console.WriteLine(neChetnoeChislo);
-		Console.WriteLine(sumNeChetnoeChislo);
+		Console.WriteLine(chetnoeChislo + sumChetnoeChislo);
+		Console.WriteLine(neChetnoeChislo + sumNeChetnoeChislo);
 	}
 }
