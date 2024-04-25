@@ -12,7 +12,7 @@ public class Program
 		int lenghtRange = Convert.ToInt32(Console.ReadLine());
 		
 		myArray = new int[lenghtRange];
-		for(int i = 0; i < myArray.Length; i++)
+		for(int i = 0; i < lenghtRange; i++)
 		{
 		Console.WriteLine("Enter the value of the element " + cycle++);	
 		myArray[i] = Convert.ToInt32(Console.ReadLine());
