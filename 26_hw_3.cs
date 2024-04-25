@@ -7,10 +7,15 @@ public class Program
 		// Найти сумму четных чисел в массиве
 		int sum = 0;
 		
-		int[] myArray = {2, 6, 5, 5 }; 
+		int[] myArray;
+		Console.WriteLine("Determine the range length");
+		int lenghtRange = Convert.ToInt32(Console.ReadLine());
 		
-		for(int i = myArray.Length-1; i >= 0; i--)
+		myArray = new int[lenghtRange];
+		
+		for(int i = 0; i < lenghtRange; i++)
 		{
+		myArray[i] = Convert.ToInt32(Console.ReadLine());
 		Console.WriteLine(myArray[i]);
 			if(myArray[i] %2 == 0)
 			{
