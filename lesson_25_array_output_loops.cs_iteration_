@@ -1,0 +1,15 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		// ВЫВОД МАССИВА | ПЕРЕБОР МАССИВА | МАССИВЫ И ЦИКЛЫ 
+		
+		int[] myArray = {10, 3, 5, 44};
+		for(int i = 0; i < myArray.Length; i++)
+		{
+			Console.WriteLine(myArray[i]);	
+		}
+	}
+}
