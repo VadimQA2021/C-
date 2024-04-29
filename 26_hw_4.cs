@@ -1,30 +1,46 @@
 using System;
-					
+
 public class Program
 {
-	public static void Main()
-	{
-		// Найти сумму четных чисел в массиве
+    public static void Main(string[] args)
+    {
+        //Написать метод, который выводит на экран строку.
+		//Символы, из которых состоит строка и их количество вводятся пользователем
 		
-		int[] myArray;
-		Console.WriteLine("Determine the range length");
-		int lenghtRange = Convert.ToInt32(Console.ReadLine());
+		//модификаторы тип_возвращаемого_значения название_методы(параментры)
+		//{
+		//	тело метода
+		//}
 		
-		myArray = new int[lenghtRange];
+		//символ
+		//количество этого символа
+		int quantityCharacter;
+		
+		//записать в массив
 		
 		
-		//В этом цикле проиходит ввод данных
-		for(int i = 0; i < lenghtRange; i++)
-		myArray[i] = Convert.ToInt32(Console.ReadLine());
 		
-		int minValue = myArray[0];
-			
-		//В этом цикле проиходит сравнение с минимальных значением
-		for(int i = 1; i < lenghtRange; i++)
+		char[] myArray;
+		Console.WriteLine("Enter the quantity");
+		quantityCharacter = Convert.ToInt32(Console.ReadLine());
+		
+		myArray = new char[quantityCharacter];
+		for(int i = 0; i < quantityCharacter; i++)
 		{
-		if(myArray[i] < minValue)
-			minValue = myArray[i];		
+		myArray[i] = Convert.ToChar(Console.ReadLine());
 		}
-		Console.WriteLine(minValue);
-	}
+		
+		for(int i = 0; i < quantityCharacter; i++)
+		{
+		Method(myArray[i]);
+		}
+		
+		
+		
+    }
+		//Функция
+		static void Method(char character)
+		{
+		Console.WriteLine(character);
+		}
 }
