@@ -11,25 +11,38 @@ public class Program
 		//{
 		//	тело метода
 		//}
+
+	    //Важно, чтобы тип данных совпадал. Массив я заполнял char и значит на выводе данных нужно тоже использовать char.
 		
-		//символ
-		char character;
-		//количество этого символа
-		int quantityCharacter;
 		
-		Console.WriteLine("Enter a character");
-		character = Convert.ToChar((Console.ReadLine()));
 		
-		int[] myArray;
+	//1. Сначала у меня будет цикл, который записывает данные в массив
+		//Определяем длину массива
 		Console.WriteLine("Enter the quantity");
-		quantityCharacter = Convert.ToInt32(Console.ReadLine());
+		int quantity = Convert.ToInt32(Console.ReadLine());
+		//Через кончоль вводим длину массива
 		
-		myArray = new int[quantityCharacter];
-		for(int i = 0; i < quantityCharacter; i++)
+		//Делаю массив
+		char[] myArray;
+		myArray = new char[quantity];
+		//Заполняю массив с помощью цикла
+		for(int i = 0; i < quantity; i++)
 		{
-		Console.Write(character);
+		myArray[i] = Convert.ToChar(Console.ReadLine());
+		}
+		//3. Цикл вывода данных массива с помощью метода
+		for (int i = 0; i < quantity; i++)
+		{
+		Method(myArray[i]);
 		}
 		
+	//2. Метод вывода в консоль
 		
-    }
+	}
+	static void Method(char character)
+	{
+		Console.WriteLine(character);
+
+	}
+		
 }
